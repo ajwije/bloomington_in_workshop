@@ -26,7 +26,7 @@ from __future__ import print_function  # for Python 2.6 compatibility
 
 import distutils.ccompiler as _distutils_ccompiler
 import fnmatch as _fnmatch
-try:  # Python 2.7 and 3.x
+try: #Python 2.7 and 3.x
     import importlib as _importlib
 except ImportError:  # Python 2.6 and earlier
     class _Importlib (object):
@@ -70,22 +70,22 @@ CHECKS = [
     'virtual-browser',
 # Version control
     'git',
-    'hg',              # Command line tool
+    #'hg',              # Command line tool
     #'mercurial',       # Python package
-    'EasyMercurial',
+    #'EasyMercurial',
 # Build tools and packaging
-    'make',
-    'virtual-pypi-installer',
-    'setuptools',
+    #'make',
+    #'virtual-pypi-installer',
+    #'setuptools',
     #'xcode',
 # Testing
-    'nosetests',       # Command line tool
-    'nose',            # Python package
-    'py.test',         # Command line tool
-    'pytest',          # Python package
+    #'nosetests',       # Command line tool
+    #'nose',            # Python package
+    #'py.test',         # Command line tool
+    #'pytest',          # Python package
 # SQL
-    'sqlite3',         # Command line tool
-    'sqlite3-python',  # Python package
+    #'sqlite3',         # Command line tool
+    #'sqlite3-python',  # Python package
 # Python
     'python',
     'ipython',         # Command line tool
@@ -94,11 +94,11 @@ CHECKS = [
     'numpy',
     'scipy',
     'matplotlib',
-    'pandas',
+    #'pandas',
     'sympy',
     'Cython',
     'networkx',
-    'mayavi.mlab',
+    #'mayavi.mlab',
     ]
 
 CHECKER = {}
